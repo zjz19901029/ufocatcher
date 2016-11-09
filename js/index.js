@@ -148,5 +148,6 @@ $(function(){
 	$(document).on("touchend",function(){
 		hook.stopMove();
 	});
+	$(window).scrollTop(0);
 	window.hook = hook;
 });
