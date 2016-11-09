@@ -337,14 +337,14 @@ body.catching .hookwrap .hook span{
         top: 20px;
         &.left{
           left: 15px;
-          &:active{
+          &.active{
             left: 19px;
             box-shadow: none;
           }
         }
         &.right{
           left: 115px;
-          &:active{
+          &.active{
             left: 119px;
             box-shadow: none;
           }

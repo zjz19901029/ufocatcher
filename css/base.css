@@ -384,13 +384,13 @@ body.catching .hookwrap .hook span {
       top: 20px; }
       .opration .bar div.left {
         left: 15px; }
-        .opration .bar div.left:active {
+        .opration .bar div.left.active {
           left: 19px;
           -webkit-box-shadow: none;
                   box-shadow: none; }
       .opration .bar div.right {
         left: 115px; }
-        .opration .bar div.right:active {
+        .opration .bar div.right.active {
           left: 119px;
           -webkit-box-shadow: none;
                   box-shadow: none; }

@@ -127,10 +127,12 @@ $(function(){
 	}
 	var $getGift = $(".getgift");
 	$("div.left").on("touchstart",function(){//移动
+		$(this).addClass("active");
 		hook.moveLeft();
 		event.preventDefault();
 	});
 	$("div.right").on("touchstart",function(){//移动
+		$(this).addClass("active");
 		hook.moveRight();
 		event.preventDefault();
 	});
@@ -149,6 +151,7 @@ $(function(){
 		$("body").attr("isplaying","");
 	});
 	$(document).on("touchend",function(){
+		$("div.left,div.right").removeClass("active");
 		hook.stopMove();
 	});
 	$(document).on('contextmenu', function(e) {
