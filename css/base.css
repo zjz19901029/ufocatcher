@@ -562,7 +562,7 @@ body[isplaying="true"] .left, body[isplaying="true"] .right, body[isplaying="tru
     display: block;
     -webkit-animation: show 1s 0s forwards;
             animation: show 1s 0s forwards; }
-  .getgift:before, .getgift:after {
+  .getgift span {
     opacity: 0;
     content: "❤";
     font-size: 10px;
@@ -570,10 +570,10 @@ body[isplaying="true"] .left, body[isplaying="true"] .right, body[isplaying="tru
     position: absolute;
     left: 50%;
     top: 200px; }
-  .getgift.show:after {
+  .getgift.show span:nth-of-type(1) {
     -webkit-animation: love 3s 0s infinite;
             animation: love 3s 0s infinite; }
-  .getgift.show:before {
+  .getgift.show span:nth-of-type(2) {
     -webkit-animation: love 3s .5s infinite;
             animation: love 3s .5s infinite; }
   .getgift button {
