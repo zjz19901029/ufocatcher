@@ -148,6 +148,9 @@ $(function(){
 	$(document).on("touchend",function(){
 		hook.stopMove();
 	});
+	$(document).on('contextmenu', function(e) {
+	  e.preventDefault();
+	})
 	$(window).scrollTop(0);
 	window.hook = hook;
 });
