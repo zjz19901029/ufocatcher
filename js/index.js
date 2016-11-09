@@ -128,12 +128,15 @@ $(function(){
 	var $getGift = $(".getgift");
 	$("div.left").on("touchstart",function(){//移动
 		hook.moveLeft();
+		event.preventDefault();
 	});
 	$("div.right").on("touchstart",function(){//移动
 		hook.moveRight();
+		event.preventDefault();
 	});
 	$(".start").click(function(){//开始
 		hook.startCatching();
+		event.preventDefault();
 	});
 	$(".exit p").click(function(){//领取礼物
 		$getGift.css("left",$(this).offset().left+"px");
